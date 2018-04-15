@@ -1,0 +1,17 @@
+<style>
+    .gaya{
+        margin-top: 60px;
+    }
+</style>
+ 
+<h4><% include navbar.ejs %></h4> 
+<form id= "update" method="POST" action="/edit-color/<%=id%>">
+    <table class="gaya">
+        <tr>
+            <td>
+                <input type="text" name="colors" placeholder="<%= warna[0].color %>" required> 
+            </td>
+        </tr>
+    </table>
+  <br><p><button type="submit" class="btn btn-success" value="save" >UPDATE</button>
+</form>   

@@ -1,0 +1,18 @@
+<style>
+    .gaya{
+        margin-top: 60px;
+    }
+</style>
+ 
+<h4><% include navbar.ejs %></h4> 
+<form id= "update" method="POST" action="/edit-category/<%=id%>">
+    <h4>Edit Category</h4>
+    <table class="gaya">
+        <tr>
+            <td>
+                <input type="text" name="category_names" placeholder="<%= kategori[0].category_name %>" required> 
+            </td>
+        </tr>
+    </table>
+  <br><p><button type="submit" class="btn btn-success" value="save" >UPDATE</button>
+</form>

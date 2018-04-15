@@ -1,0 +1,32 @@
+<style>
+    .gaya{
+        margin-top: 60px;
+    }
+</style>
+<h4><% include navbar.ejs %></h4> 
+ <h2>Form Update Stok dan Warna</h2>   
+    <form id= "update " method="POST" action="/edit-stock/<%=id%>">
+        <table class="gaya">
+            <tr>
+                <td>
+                    Size  
+                </td>
+                <td>
+                    :<input type="text"  name="sizes" placeholder="<%= stock[0].size %>" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Stock Now!!!
+                </td>
+                <td>
+                    :<input type="number"  name="now" value="<%= stock[0].stock %>" > 
+                </td>
+                <td>
+                   | Stok Update <input required type="number" name="update" placeholder="Jumlah Stok Masuk" />
+                </td>
+            </tr>
+        </table>
+      <br><p><button type="submit" class="btn btn-success" value="Simpan" >UPDATE</button>
+    </form>
+</form>

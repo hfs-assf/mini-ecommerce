@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Caught Stealin</title>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <style>
+        .gaya{
+            margin-top: 50px;
+        }
+        .gaya1{
+            width: 150px;
+        }
+    </style>
+<body>
+    <div class="container-fluid gaya"> 
+       <div class="row">
+        <div class="col-lg-3">
+
+        <h1 class="my-4">Category</h1>
+            <a href="#" class="list-group-item list-group-item-danger gaya1 active">
+                <%= x[0].nameseason %>
+            </a>      
+            <div class="list-group">
+                <% x.forEach (x => { %>  
+                    <a href="/product/<%= x.id %>" class="list-group-item gaya1"><%= x.category_name %></a>
+                <% }) %>        
+            </div>
+        </div>
+       </div>
+    </div>
+</body>

@@ -1,0 +1,18 @@
+<style>
+    .gaya{
+        margin-top: 60px;
+    }
+</style>
+ 
+<h4><% include navbar.ejs %></h4> 
+<form id= "update" method="POST" action="/edit-season/<%=id%>">
+    <h4>Edit Season</h4>
+    <table class="gaya">
+        <tr>
+            <td>
+                <input type="text" name="nameseasons" placeholder="<%= season[0].nameseason %>" required> 
+            </td>
+        </tr>
+    </table>
+  <br><p><button type="submit" class="btn btn-success" value="save" >UPDATE</button>
+</form>   
